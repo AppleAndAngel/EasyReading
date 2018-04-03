@@ -1,0 +1,86 @@
+<!--pages/leader/stories/stories.wxml-->
+<view class="container container_bgFFF">
+  <view wx:for="{{articleInfo}}" wx:key="{{index}}">
+    <view class="page__hd">
+      <view class="page__hd-title">
+        {{item.articTitle}}
+      </view>
+      <view class="page__hd-wrp">
+        <view class="head-image">
+          <image src="{{item.headImg}}" mode="aspectFill" />
+        </view>
+        <view class="head-author">
+          {{item.userName}}
+          <view class="head-author__authorDes">
+            {{item.authorDes}}
+          </view>
+        </view>
+        <view class="head-guanzhu center">
+          关注
+        </view>
+      </view>
+    </view>    
+  </view>
+
+  <!-- <view wx:for="{{article}}" wx:key="index">
+  fdsfsdfs
+  </view> -->
+
+   <view wx:for="{{article}}" wx:key="{{index}}">
+    <view class="page__bd">
+      <view class="page__bd_articelContent">
+        <view class="page__bd_image">
+          <image src="{{item.image1}}" />
+        </view>
+        <text>
+          {{item.text1}}
+        </text>
+        <view class="page__bd_image">
+          <image src="{{item.image2}}" />
+        </view>
+        <text>
+          {{item.text2}}
+        </text>
+      </view>
+    </view>
+
+    <view class="center">书籍推荐</view>
+    <view class="page__items page-flex">
+      <view class="page__items_bookcover">
+        <image src="{{item.bookCover}}" />
+      </view>
+      <view class="page__bookInfo">
+        <view class="bookInfo_bn">{{item.bookName}}</view>
+        <view class="bookInfo_ba">{{item.bookAuthor}}</view>
+        <view class="bookInfo_bnum">{{item.readerNum}}人在读</view>
+      </view>
+      <view class="page__beginRead center">开始阅读</view>
+    </view>
+
+    <view class="page__bt">
+      <text>注：文章版权归作者所有，转载请联系作者授权</text>
+      <view class="page-updateC page-flex">
+        <view class="update-time">编辑于{{item.updateTime}}</view>
+        <text>举报</text>
+      </view>
+      <view class="center">
+        <view class="btnThumb">
+          <image src="../../../assets/images/thumb.png" />用生命点赞
+        </view>
+      </view>      
+    </view>
+  </view> 
+
+  <view class="page__footer page-flex">
+    <view class="footer-items">
+        <image src="../../../assets/images/share.png" />
+    </view>
+    <view class="footer-items">
+        <image src="../../../assets/images/like.png" />
+    </view>
+    <view class="footer-items">
+        <image src="../../../assets/images/share.png" />
+    </view>
+  </view>
+
+</view>

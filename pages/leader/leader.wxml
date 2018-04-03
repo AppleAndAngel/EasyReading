@@ -1,0 +1,44 @@
+<!--pages/leader/leader.wxml-->
+<!-- <text>pages/leader/leader.wxml</text> -->
+<view class="container">
+  <view class="page__hd">
+    <view class="page__hd-title center">领读者</view>
+  </view>
+  <scroll-view class="page__bd" wx:for="{{authors}}" wx:key="{{index}}">
+    <navigator url="authors/author" hover-class="none" >
+      <view class="page__bd-head">
+        <view class="head-image">
+          <image src="{{item.headImg}}" mode="aspectFill" />
+        </view>
+        <view class="head-author">
+          {{item.userName}}
+        </view>
+      </view>
+    </navigator>
+     <navigator url="stories/stories?id={{index}}">
+      <view class="page-banner center">
+        <image src="{{item.bannerImg}}" mode="aspectFill" />
+      </view>
+      <view class="page-articalTitle">
+        {{item.articTitle}}
+      </view>
+      <view class="page-articContent">
+        {{item.articContent}}
+      </view>
+      <view class="page-clickTimes">
+        {{item.clickTimes}}次点击
+      </view>
+     </navigator>
+      <view class="page-thumbUp">
+        <!-- <view class="page-thumbUp-times"> -->
+          {{item.thumbUp}}
+        <!-- </view> -->
+        <image class="page-thumbUp-icon" src="../../assets/images/pointer.png" />
+      </view>
+
+
+  </scroll-view>
+
+
+
+</view>
