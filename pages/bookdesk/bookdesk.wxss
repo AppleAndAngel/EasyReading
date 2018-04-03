@@ -1,0 +1,57 @@
+/* pages/bookdesk/bookdesk.wxss */
+.swiper{
+  width:750rpx;
+  height:960rpx;
+  position:absolute;
+  bottom:0;
+}
+
+.page__bd-books image{
+  margin-top:100rpx;
+  width:400rpx;
+  height:600rpx;
+  display:block;
+  margin:100rpx auto 0;
+  box-shadow:20rpx 20rpx 20rpx #cccccc;
+  border-radius:10rpx;
+
+}
+
+.page__bt{
+  /*margin-top:100rpx;*/
+  width:100%;
+  color:#999;
+  position:absolute;
+  bottom:0;
+}
+.page__bt-bookname{
+  color:#000000;
+  font-size:30rpx;
+}
+.page__bt-bookinfo{
+  font-size:24rpx;
+  margin-top:25rpx;
+  margin-bottom:10rpx;
+}
+.swiper__dots{
+  background:#EBE8E7;
+  display:flex;
+  position:absolute;
+  bottom:200rpx;
+  border-radius: 10rpx;
+  /*text-align:center;*/
+}
+ .swiper__dots-item{
+   width:50rpx;
+   height:10rpx;
+   /*margin:0 auto;*/
+ }
+ .swiper__dots-item-all{
+   width:40rpx;
+   height:10rpx;
+   /*margin:0 auto;*/
+ }
+.active{
+   background:#333333;
+   border-radius:10rpx;
+ }
