@@ -1,29 +1,29 @@
 <!--pages/leader/leader.wxml-->
 <!-- <text>pages/leader/leader.wxml</text> -->
 <view class="container">
-  <view class="page__hd">
+  <!--<view class="page__hd">
     <view class="page__hd-title center">领读者</view>
-  </view>
-  <scroll-view class="page__bd" wx:for="{{authors}}" wx:key="{{index}}">
+  </view>-->
+  <view class="page__bd" wx:for="{{authors}}" wx:key="{{index}}">
     <navigator url="authors/author" hover-class="none" >
       <view class="page__bd-head">
         <view class="head-image">
           <image src="{{item.headImg}}" mode="aspectFill" />
         </view>
         <view class="head-author">
-          {{item.userName}}
+          {{item.username}}
         </view>
       </view>
     </navigator>
      <navigator url="stories/stories?id={{index}}">
       <view class="page-banner center">
-        <image src="{{item.bannerImg}}" mode="aspectFill" />
+        <image src="{{item.bannerImage}}" mode="aspectFill" />
       </view>
       <view class="page-articalTitle">
-        {{item.articTitle}}
+        {{item.articleTitle}}
       </view>
       <view class="page-articContent">
-        {{item.articContent}}
+        {{item.articleContent}}
       </view>
       <view class="page-clickTimes">
         {{item.clickTimes}}次点击
@@ -37,7 +37,7 @@
       </view>
 
 
-  </scroll-view>
+  </view>
 
 
 

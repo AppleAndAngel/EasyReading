@@ -3,16 +3,16 @@
   <view wx:for="{{articleInfo}}" wx:key="{{index}}">
     <view class="page__hd">
       <view class="page__hd-title">
-        {{item.articTitle}}
+        {{item.articleTitle}}
       </view>
       <view class="page__hd-wrp">
         <view class="head-image">
           <image src="{{item.headImg}}" mode="aspectFill" />
         </view>
         <view class="head-author">
-          {{item.userName}}
+          {{item.username}}
           <view class="head-author__authorDes">
-            {{item.authorDes}}
+            {{item.userDes}}
           </view>
         </view>
         <view class="head-guanzhu center">

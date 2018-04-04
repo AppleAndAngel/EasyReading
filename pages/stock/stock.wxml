@@ -4,8 +4,8 @@
     <!-- <view class="page__bd"> -->
       <navigator url="fenlei/fenlei?id={{index}}">
         <view class="page__bd_stock">
-           <image src="{{item.typeCover}}" />
-           <text class="page__bd_name">{{item.bookTypes}}</text>
+           <image src="{{item.bookCover}}" />
+           <text class="page__bd_name">{{item.bookType}}</text>
         </view>
       </navigator>
     </view>

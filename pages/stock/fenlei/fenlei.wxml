@@ -1,10 +1,20 @@
 <!--pages/stock/fenlei/fenlei.wxml-->
 
-<view class="contain grid">
-  <view wx:for="{{list}}" wx:key="{{index}}">
-    <view class="page__bd_stock">
-        <image src="{{item.bookCover}}" />
-        <text class="page__bd_name">{{item.bookName}}</text>
+<view class="contain">
+  <view class="page__hd">
+    <view>{{listDes.bookDes}}</view>
+    <view class="page__hd_title right">
+      <image src="../../../assets/images/woniu.png" />
+      <text class="hd-publisher">{{listDes.publisher}}</text>
+      <image src="../../../assets/images/yellow.png" />
     </view>
   </view>
+  <view class="grid">
+    <view wx:for="{{list}}" wx:key="{{index}}">
+      <view class="page__bd_stock">
+          <image src="{{item.bookCover}}" />
+          <text class="page__bd_name">{{item.bookName}}</text>
+      </view>
+    </view>
+  </view>  
 </view>

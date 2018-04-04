@@ -1,18 +1,35 @@
 /* pages/stock/fenlei/fenlei.wxss */
 .grid{
-  padding:0 20rpx;
+  padding:0 40rpx;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 相当于 1fr 1fr 1fr */
   grid-template-rows: repeat(3, 1fr); /* fr单位可以将容器分为几等份 */
-  grid-gap: 3%; /* grid-column-gap 和 grid-row-gap的简写 */
+  grid-gap: 30rpx; /* grid-column-gap 和 grid-row-gap的简写 */
   grid-auto-flow: row;
+}
+.page__hd{
+  font-size:28rpx;
+  padding:20rpx 50rpx 80rpx;
+  color:#666;
+}
+.page__hd_title{
+  margin-top:30rpx;
+}
+.page__hd_title image{
+  width:40rpx;
+  height:40rpx;
+  transform:translateY(10rpx);
+}
+.hd-publisher{
+  font-size:22rpx;
+  margin:0 10rpx;
 }
 .page__bd_stock{
   position:relative;
   margin-bottom:50rpx;
 }
 .page__bd_stock image{
-  width:90%;
+  width:95%;
   height:240rpx;
   /* position:absolute; */
 }

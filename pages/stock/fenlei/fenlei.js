@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[]
+    list:[],
+    listDes:{}
   },
 
   /**
@@ -15,17 +16,23 @@ Page({
     let _this = this;
 
     wx.request({
-      url: 'https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo',
+      url: 'https://www.easy-mock.com/mock/5ac4410ebd54fc1e0f62374d/getDatas/getAticleStack#!method=get',
       header: {
         'content-type': 'application/json'
       },
       success: function (res) {
+        wx.setNavigationBarTitle({
+          title: res.data.data.stack[options.id].bookType
+        })
 
         console.log(res.data.data.stack[options.id], 'ggg-----')
 
         _this.setData({
-          list: res.data.data.stack[options.id].List.bookList
-          // id:res.data.data.index.
+          list: res.data.data.stack[options.id].booklist,
+          listDes:{
+            bookDes:res.data.data.stack[options.id].bookDes,
+            publisher:res.data.data.stack[options.id].publisher
+          }
         })
 
       }
@@ -37,6 +44,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    console.log(this.data,'----dasd')
   
   },
 
@@ -44,7 +52,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**

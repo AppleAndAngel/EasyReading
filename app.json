@@ -11,7 +11,7 @@
   "window":{
     "backgroundTextStyle":"linght",
     "navigationBarBackgroundColor": "#f7f7f7",
-    "navigationBarTitleText": "我爱读书",
+    "navigationBarTitleText": "领读",
     "navigationBarTextStyle":"black"
   },
   "tabBar":{

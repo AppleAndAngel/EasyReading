@@ -15,7 +15,7 @@ Page({
   onLoad: function (options) {
     let _this = this;
     wx.request({
-      url: 'https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo',
+      url: 'https://www.easy-mock.com/mock/5ac4410ebd54fc1e0f62374d/getDatas/articleList',
       success:function(res){
         _this.setData({
           articleInfo : res.data.data.index[options.id].articleInfo,

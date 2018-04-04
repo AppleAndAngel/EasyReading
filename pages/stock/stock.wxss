@@ -13,6 +13,7 @@
 .page__bd_stock image{
   width:100%;
   height:240rpx;
+  border-radius:10rpx;
   /* position:absolute; */
 }
 .page__bd_name{

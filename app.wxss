@@ -15,6 +15,9 @@
 .center{
   text-align:center;
 }
+.right{
+  text-align:right;
+}
 .page-flex{
   display:flex;
 }
